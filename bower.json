@@ -46,7 +46,7 @@
       "js": "require.js"
     },
     "angularjs": {
-      "js": "angular.*.js"
+      "js": "angular*.js"
     },
     "underscore": {
       "js": "underscore.js"

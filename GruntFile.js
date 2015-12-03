@@ -56,7 +56,7 @@ module.exports = function(grunt) {
         bower: {
             install: {
                 options: {
-                    targetDir: './lib',
+                    targetDir: './static',
                     layout: 'byType',
                     install: true,
                     verbose: false,
@@ -81,5 +81,5 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
     grunt.registerTask('check', ['jshint']);
     grunt.registerTask('build', ['concat', 'uglify', 'cssmin']);
-    grunt.registerTask('moveFilesToLib', ['bower:install']);
+    grunt.registerTask('bowerTask', ['bower:install']);
 };
