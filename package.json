@@ -1,0 +1,31 @@
+{
+  "name": "test_hybrid_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OptimusZhang/TestHybridApp.git"
+  },
+  "keywords": [
+    "hybrid",
+    "bootstrap",
+    "backbone",
+    "angularjs",
+    "requirejs"
+  ],
+  "author": "jianwu.zhang",
+  "bugs": {
+    "url": "https://github.com/OptimusZhang/TestHybridApp/issues"
+  },
+  "homepage": "https://github.com/OptimusZhang/TestHybridApp#readme",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-css": "^0.5.4"
+  }
+}

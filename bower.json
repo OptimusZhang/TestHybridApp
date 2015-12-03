@@ -1,0 +1,61 @@
+{
+  "name": "TestHybridApp",
+  "version": "0.0.1",
+  "homepage": "https://github.com/OptimusZhang/TestHybridApp",
+  "authors": [
+    "jianwu.zhang <jianwu.zhang@accenture.com>"
+  ],
+  "description": "test techenology of HybridApp",
+  "main": "src",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "HybridApp",
+    "JS",
+    "Framework",
+    "Bootstrap",
+    "PhoneGap",
+    "RequireJS",
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "require-handlebars-plugin": "~1.0.0",
+    "jquery": "~2.1.4",
+    "bootstrap": "3.3.6",
+    "requirejs": "2.1.22",
+    "angularjs": "~1.4.8",
+    "backbone": "~1.2.3",
+    "underscore": "~1.8.3"
+  },
+  "comment": "Congfig grunt-bower-task as below",
+  "exportsOverride": {
+    "jquery": {
+      "js": "dist/jquery.js"
+    },
+    "bootstrap": {
+      "js": "dist/js/*.js",
+      "fonts": "fonts/*",
+      "css": "dist/css/*.css"
+    },
+    "requirejs": {
+      "js": "require.js"
+    },
+    "angularjs": {
+      "js": "angular.*.js"
+    },
+    "underscore": {
+      "js": "underscore.js"
+    },
+    "backbone": {
+      "js": "backbone*.js"
+    },
+    "require-handlebars-plugin": {
+      "js": "hbs.js"
+    }
+  }
+}
