@@ -1,26 +1,53 @@
 /**
  * Created by jianwu.zhang on 2015/12/03.
  */
-requirejs.config({
-    baseUrl: '../js',
+require.config({
+    baseUrl: './static/js/zzz',
     paths: {
-        'jquery': 'jquery/jquery',
-        'bootstrap': 'bootstrap/bootstrap',
-        'underscore': 'underscore/underscore',
-        'backbone': 'backbone/backbone',
-        'angularjs': 'angularjs/angularjs',
-        'hbs': 'require-handlebars-plugin/hbs'
+        'jquery': '../jquery/jquery',
+        'fakeLoader': '../fakeLoader/fakeLoader',
+        'bootstrap': '../bootstrap/bootstrap',
+        'underscore': '../underscore/underscore',
+        'backbone': '../backbone/backbone',
+        'marionette': '../backbone.marionette/backbone.marionette',
+        'babysitter': '../backbone.babysitter/backbone.babysitter',
+        'wreqr': '../backbone.wreqr/backbone.wreqr',
+        'angularjs': '../angularjs/angularjs',
+        'hbs': '../require-handlebars-plugin/hbs'
     },
     shim : {
+        'jquery': {
+            exports: '$'
+        },
+        'fakeLoader': {
+            deps : ['jquery'],
+            exports: '$.fn.fakeLoader'
+        },
+        'underscore': {
+            exports: '_'
+        },
         'bootstrap': {
-            deps : 'jquery',
+            deps : ['jquery']
         },
         'backbone': {
-            deps : 'underscore',
+            deps : ['jquery', 'underscore'],
             exports: 'Backbone'
         }
-
-
     }
+});
 
+require(['jquery', 'fakeLoader'], function($) {
+        'use strict';
+
+        // initialize fakeLoader
+        $('.fakeLoader').fakeLoader({
+            timeToHide: 1500,        //Time in milliseconds for fakeLoader disappear
+            zIndex: "999",           //Default zIndex
+            spinner: "spinner2",     //Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+            bgColor: "#2882b5"          //Hex, RGB or RGBA colors
+        });
+
+        require(['app'], function(app){
+            app.start();
+        });
 });

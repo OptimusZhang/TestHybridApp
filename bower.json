@@ -30,7 +30,9 @@
     "requirejs": "2.1.22",
     "angularjs": "~1.4.8",
     "backbone": "~1.2.3",
-    "underscore": "~1.8.3"
+    "underscore": "~1.8.3",
+    "backbone.marionette": "marionette#~2.4.4",
+    "fakeLoader": "fakeloader#*"
   },
   "comment": "Congfig grunt-bower-task as below",
   "exportsOverride": {
@@ -53,6 +55,19 @@
     },
     "backbone": {
       "js": "backbone*.js"
+    },
+    "backbone.marionette": {
+      "js": "lib/backbone.marionette.js"
+    },
+    "backbone.babysitter": {
+      "js": "lib/backbone.babysitter.js"
+    },
+    "backbone.wreqr": {
+      "js": "lib/backbone.wreqr.js"
+    },
+    "fakeLoader": {
+      "js": "fakeLoader*.js",
+      "css": "fakeLoader.css"
     },
     "require-handlebars-plugin": {
       "js": "hbs.js"
