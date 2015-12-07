@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.fixedArea {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+}
+
+.navContainer {
+    width: 100%;
+    height: 70px;
+    display: table;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navContainer:first-child {
+    border-left: none;
+}
+
+.navUnit {
+    height:100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: #e0e0e0;
+    border-top: 1px solid #9d9d9d;
+    text-shadow: 2px 2px 1px #9d9d9d;
+}
+.navUnit:active {
+    background-color: #9d9d9d;
+    border: none;
+    box-shadow: inset 0 0 50px #ffffff;
+    text-shadow: 0 0 0 0;
+    color: #ffffff;
+}
+
+.scale_2 {
+    transform: scale(2,2);
+}
