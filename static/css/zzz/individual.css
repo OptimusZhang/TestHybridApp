@@ -1,0 +1,149 @@
+/* common header Start*/
+#header {
+    height: 50px;
+    position: fixed;
+    z-index: 900;
+    width:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.headerNavContainer {
+    background-color: #3097d1;
+    padding: 0;
+    border-bottom: 1px solid #1c73a5;
+}
+.headNavUnit{
+    line-height:50px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1px #1c73a5;
+}
+.textLogo{
+    font-size: 30px;
+    line-height: 50px;
+    vertical-align: middle;
+    font-weight: bold;
+    letter-spacing: -5px;
+    word-spacing: -5px;
+    text-shadow: 0 8px 7px black,0 -1px 1px white;
+}
+/* common header End*/
+
+/* common content Start*/
+#content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.categoryContainer {
+    overflow: auto;
+    padding:8px 0;
+}
+
+.category{
+    height: 126px;
+    margin: 8px 0;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: lightcyan;
+    text-shadow: 0 2px 2px #000000;
+}
+
+.category .title {
+    position: absolute;
+    display: inline-block;
+    top : 20%;
+}
+
+.category .categoryWrap{
+    position: relative;
+    display: inline-block;
+    border: 1px solid #9acfea;
+}
+
+.category img {
+    max-width: 100%;
+}
+
+.category_left .title{
+    left: 5%;
+}
+
+.category_left .categoryWrap{
+    left: -300px;
+    opacity: 0;
+}
+
+.category_left .slideInFromLeft{
+    transition: all 0.3s ease-in;
+    left: 0;
+    opacity: 1;
+}
+.category_right .title{
+    right: 5%;
+}
+
+.category_right .categoryWrap{
+    right: -300px;
+    opacity: 0;
+}
+
+.category_right .slideInFromRight{
+    transition: all 0.3s ease-in;
+    right: 0;
+    opacity: 1;
+}
+/* common content End*/
+
+/* common footer Start*/
+#footer{
+    height: 50px;
+    position: fixed;
+    z-index: 900;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footerNavContainer {
+    border-top: 1px solid #1c73a5;
+    background-color: #3097d1;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.footerNavContainer:first-child {
+    border-left: none;
+}
+
+.footerNavUnit {
+    line-height:50px;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 1px #1c73a5;
+}
+
+.footerNavUnit:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 20px;
+    top: 15px;
+    right: 0;
+    margin: auto 0;
+    border-right:1px solid #ffffff;
+}
+
+.footerNavUnit.last:after {
+    border-right:none;
+}
+/* common footer End*/

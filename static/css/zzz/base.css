@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container-fluid {
+    padding:0 5px;
+}
+.row {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.1;
+}
