@@ -12,8 +12,8 @@
         //Defaults
         var settings = $.extend({
             timeToHide:1000, // Default Time to hide fakeLoader
-            fadeInTime: 1000, // Default Time to show fakeLoader
-            fadeOutTime: 1000, // Default Time to Hide fakeLoader
+            fadeInTime: 0, // Default Time to show fakeLoader
+            fadeOutTime: 0, // Default Time to Hide fakeLoader
             pos:'fixed',// Default Position
             top:'0px',  // Default Top value
             left:'0px', // Default Left value

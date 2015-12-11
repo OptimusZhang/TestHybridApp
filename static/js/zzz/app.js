@@ -2,12 +2,12 @@
  * Created by jianwu.zhang on 2015/12/04.
  */
 define(['marionette', 'backbone','hbs',
-        'properties'],
-    function (Mn, Bb, Hbs, prop) {
+        'properties', 'base/BaseApplication', 'routers/MyRouter'],
+    function (Mn, Bb, Hbs, prop, BaseApp, MyRooter) {
         'use strict';
 
         // config global variable in app
-        var app = new Mn.Application({
+        var app = new BaseApp({
             // define Regions
             regions: {
                 mainRegion: '#main-region'
@@ -18,35 +18,22 @@ define(['marionette', 'backbone','hbs',
         app.Bb = Bb;
         app.properties = prop;
 
-        //define app
-        require(['layoutViews/base/baseLayoutView'],
-            function (BaseLayoutView) {
+        //define routers
+        var myRooter = new MyRooter();
 
-                //define routers
-                var MyRooter = app.Mn.AppRouter.extend({
-                    routers: {
-                        "top": "showTop",
-                        "laws": "showLaws"
-                    },
-
-                    showTop: function(){
-                        console.log("topRouter:showTop();");
-                    },
-                    showLaws: function() {
-                        console.log("lawRouter:showLaws();");
-                    }
-                });
-                var myRooter = new MyRooter();
+        app.on('start', function () {
+            if (app.Bb.history) {
                 app.Bb.history.start();
+            }
 
-                // show regions
-                app.mainRegion.show(new BaseLayoutView());
+            myRooter.navigate(myRooter.routes.top ,{
+                trigger: true
+            });
+        });
+        //define app
+        require(['routers/MyRouter'],
+            function (TopLayoutView, MyRooter) {
 
-                app.on('start', function () {
-                    if (app.Bb.history) {
-                        app.Bb.history.start();
-                    }
-                });
             });
 
         return app;
