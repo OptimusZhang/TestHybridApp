@@ -1,7 +1,7 @@
 /**
  * Created by jianwu.zhang on 2015/12/11.
  */
-define(['base/BaseItemView','hbs!../../templates/top/TopContentItemViewTmpl'],
+define(['../../base/BaseItemView','hbs!../../templates/top/TopContentItemViewTmpl'],
     function (BaseItemView, TopContentItemViewTmpl) {
         'use strict';
         return BaseItemView.extend({
@@ -15,11 +15,6 @@ define(['base/BaseItemView','hbs!../../templates/top/TopContentItemViewTmpl'],
                     $('.category_left .categoryWrap').addClass('slideInFromLeft');
                     $('.category_right .categoryWrap').addClass('slideInFromRight');
                 }, 100);
-
-                //setTimeout(function(){
-                //    $('.category_left .categoryWrap').removeClass('slideInFromLeft');
-                //    $('.category_right .categoryWrap').removeClass('slideInFromRight');
-                //}, 2000);
             }
         });
     });

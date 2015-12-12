@@ -1,0 +1,65 @@
+/* define Style1*/
+.style1 .category{
+    height: 126px;
+    margin: 8px 0;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: lightcyan;
+    text-shadow: 0 2px 2px #000000;
+}
+
+.style1 .category .title {
+    position: absolute;
+    display: inline-block;
+    top : 20%;
+}
+
+.style1 .category .categoryWrap{
+    position: relative;
+    display: inline-block;
+    width: 290px;
+    height: 125px;
+    border: 1px solid #9acfea;
+}
+.style1 .category .categoryWrap.bgLegal{
+    background: url("../../images/category/legal.png") no-repeat;
+}
+
+.style1 .category .categoryWrap.bgInsurance{
+    background: url("../../images/category/insurance.png")  no-repeat;
+}
+
+.style1 .category .categoryWrap.bgOthers{
+    background: url("../../images/category/other.png")  no-repeat;
+}
+
+.style1 .category_left .title{
+    left: 5%;
+}
+
+.style1 .category_left .categoryWrap{
+    left: -300px;
+    opacity: 0;
+}
+
+.style1 .category_left .slideInFromLeft{
+    transition: all 0.3s ease-in;
+    left: 0;
+    opacity: 1;
+}
+.style1 .category_right .title{
+    right: 5%;
+}
+
+.style1 .category_right .categoryWrap{
+    right: -300px;
+    opacity: 0;
+}
+
+.style1 .category_right .slideInFromRight{
+    transition: all 0.3s ease-in;
+    right: 0;
+    opacity: 1;
+}

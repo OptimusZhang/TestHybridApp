@@ -34,14 +34,13 @@
 /* category */
 .categoryWrap:active,
 .categoryWrap:hover {
-    /*-webkit-transition: box-shadow 0.3s ease;*/
-    /*-moz-transition: box-shadow 0.3s ease;*/
-    /*-o-transition: box-shadow 0.3s ease;*/
-    /*transition: box-shadow 0.3s ease;*/
+    -webkit-transform: scale(1.01,1.01);
+    -moz-transform: scale(1.01,1.01);
+    -ms-transform: scale(1.01,1.01);
+    -o-transform: scale(1.01,1.01);
     transform: scale(1.01,1.01);
-    border: 5px solid #3097d1 !important;
-    box-shadow: 0 0 10px #3097d1 !important;;
-    /*box-shadow: 3px 3px 10px #3097d1, -3px -3px 10px #3097d1,3px -3px 10px #3097d1,-3px 3px 10px #3097d1;*/
+    border: 1px solid #29DFFF !important;
+    box-shadow: 0 0 20px #29DFFF !important;
     text-shadow:-3px 5px 5px #000000, -2px -2px 1px  #E8E9F0;
     font-size: 45px;
     color: #ffffff;

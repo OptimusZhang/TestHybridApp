@@ -1,0 +1,78 @@
+/* define Style2*/
+.style2 .category{
+    height: 126px;
+    margin: 8px 0;
+    padding: 3px 10px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 2px 2px #000000;
+}
+
+.style2 .category .title {
+    position: absolute;
+    display: inline-block;
+    height: 70px;
+    vertical-align: text-top;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.style2 .category .categoryWrap{
+    position: relative;
+    height: 125px;
+}
+.style2 .category .categoryWrap.bgLegal{
+    background-image: -webkit-linear-gradient(top, #8fa1ff, #3757fa);
+    background-image: -moz-linear-gradient(top, #8fa1ff, #3757fa);
+    background-image: -ms-linear-gradient(top, #8fa1ff, #3757fa);
+    background-image: -o-linear-gradient(top, #8fa1ff, #3757fa);
+    background-image: linear-gradient(top, #8fa1ff, #3757fa);
+}
+
+.style2 .category .categoryWrap.bgInsurance{
+    background-image: -webkit-linear-gradient(top, #ff4f02, #8f2c00);
+    background-image: -moz-linear-gradient(top, #ff4f02, #8f2c00);
+    background-image: -ms-linear-gradient(top, #ff4f02, #8f2c00);
+    background-image: -o-linear-gradient(top, #ff4f02, #8f2c00);
+    background-image: linear-gradient(top, #ff4f02, #8f2c00);
+}
+
+.style2 .category .categoryWrap.bgOthers{
+    background-image: -webkit-linear-gradient(top, #c6ff00, #538300);
+    background-image: -moz-linear-gradient(top, #c6ff00, #538300);
+    background-image: -ms-linear-gradient(top, #c6ff00, #538300);
+    background-image: -o-linear-gradient(top, #c6ff00, #538300);
+    background-image: linear-gradient(top, #c6ff00, #538300);
+}
+
+.style2 .category_left .title{
+    left: 5%;
+}
+
+.style2 .category_left .categoryWrap{
+    left: -100%;
+    opacity: 0;
+}
+
+.style2 .category_left .slideInFromLeft{
+    transition: all 0.3s ease-in;
+    left: 0;
+    opacity: 1;
+}
+.style2 .category_right .title{
+    right: 5%;
+}
+
+.style2 .category_right .categoryWrap{
+    right: -100%;
+    opacity: 0;
+}
+
+.style2 .category_right .slideInFromRight{
+    transition: all 0.3s ease-in;
+    right: 0;
+    opacity: 1;
+}

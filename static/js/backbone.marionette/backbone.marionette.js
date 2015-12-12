@@ -3044,7 +3044,7 @@
   // Layout View
   // -----------
   
-  // Used for managing application layoutViews, nested layoutViews and
+  // Used for managing application views, nested views and
   // multiple regions within an application or sub-application.
   //
   // A specialized view class that renders an area of HTML and then
