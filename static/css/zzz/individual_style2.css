@@ -1,78 +1,59 @@
 /* define Style2*/
 .style2 .category{
-    height: 126px;
     margin: 8px 0;
     padding: 3px 10px;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    color: #ffffff;
-    text-shadow: 0 2px 2px #000000;
 }
 
 .style2 .category .title {
     position: absolute;
     display: inline-block;
-    height: 70px;
-    vertical-align: text-top;
+    line-height: 60px;
+    width: 180px;
+    height:60px;
+    vertical-align: top;
+    text-align: justify;
     margin: auto;
     top: 0;
     bottom: 0;
+    left: 130px;
+    color: #ffffff;
+    letter-spacing: 20px;
+    font-family: Microsoft YaHei UI;
+    font-size: 60px;
+    font-weight: bold;
 }
 
 .style2 .category .categoryWrap{
     position: relative;
-    height: 125px;
+    height: 120px;
 }
+
 .style2 .category .categoryWrap.bgLegal{
-    background-image: -webkit-linear-gradient(top, #8fa1ff, #3757fa);
-    background-image: -moz-linear-gradient(top, #8fa1ff, #3757fa);
-    background-image: -ms-linear-gradient(top, #8fa1ff, #3757fa);
-    background-image: -o-linear-gradient(top, #8fa1ff, #3757fa);
-    background-image: linear-gradient(top, #8fa1ff, #3757fa);
+    background: #77B3D4 url("../../images/category/style2/legal.png") left -10px center no-repeat;
+    border:1px solid #76C2AF;
 }
 
 .style2 .category .categoryWrap.bgInsurance{
-    background-image: -webkit-linear-gradient(top, #ff4f02, #8f2c00);
-    background-image: -moz-linear-gradient(top, #ff4f02, #8f2c00);
-    background-image: -ms-linear-gradient(top, #ff4f02, #8f2c00);
-    background-image: -o-linear-gradient(top, #ff4f02, #8f2c00);
-    background-image: linear-gradient(top, #ff4f02, #8f2c00);
+    background: #E0995E url("../../images/category/style2/insurance.png") left -10px center no-repeat;
+    border:1px solid #E0995E;
 }
 
 .style2 .category .categoryWrap.bgOthers{
-    background-image: -webkit-linear-gradient(top, #c6ff00, #538300);
-    background-image: -moz-linear-gradient(top, #c6ff00, #538300);
-    background-image: -ms-linear-gradient(top, #c6ff00, #538300);
-    background-image: -o-linear-gradient(top, #c6ff00, #538300);
-    background-image: linear-gradient(top, #c6ff00, #538300);
+    background: #77B3D4 url("../../images/category/style2/other.png") left -10px center no-repeat;
+    border:1px solid #76C2AF;
 }
 
-.style2 .category_left .title{
-    left: 5%;
-}
-
-.style2 .category_left .categoryWrap{
-    left: -100%;
-    opacity: 0;
-}
-
-.style2 .category_left .slideInFromLeft{
-    transition: all 0.3s ease-in;
-    left: 0;
-    opacity: 1;
-}
-.style2 .category_right .title{
-    right: 5%;
-}
-
-.style2 .category_right .categoryWrap{
-    right: -100%;
-    opacity: 0;
-}
-
-.style2 .category_right .slideInFromRight{
-    transition: all 0.3s ease-in;
-    right: 0;
-    opacity: 1;
+/* category hover and active */
+.style2 .categoryWrap:active,
+.style2 .categoryWrap:hover {
+    -webkit-transform: scale(1.01,1.01);
+    -moz-transform: scale(1.01,1.01);
+    -ms-transform: scale(1.01,1.01);
+    -o-transform: scale(1.01,1.01);
+    transform: scale(1.01,1.01);
+    border: 1px solid #29DFFF !important;
+    box-shadow: 0 0 20px #29DFFF !important;
+    text-shadow:-3px 5px 5px #000000, -2px -2px 1px  #E8E9F0;
+    font-size: 45px;
+    color: #ffffff;
 }

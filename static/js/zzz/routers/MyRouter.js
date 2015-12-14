@@ -2,8 +2,8 @@
  * Created by jianwu.zhang on 2015/12/11.
  */
 define(['base/BaseRouter',
-    '../views/top/TopLayoutView',
-    '../views/legal/LegalLayoutView'],
+    '../views/top/TopLV',
+    '../views/legal/LegalLV'],
     function (BaseRouter, TopLayoutView, LegalLayoutView) {
         'use strict';
         return BaseRouter.extend({

@@ -4,5 +4,8 @@
 define(function(){
     console.log("env.js:Start");
 
+    return {
+        pageStyle : 'style1'
+    }
 
 });

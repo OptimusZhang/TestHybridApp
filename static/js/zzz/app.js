@@ -3,7 +3,7 @@
  */
 define(['marionette', 'backbone','hbs',
         'properties', 'base/BaseApplication', 'routers/MyRouter'],
-    function (Mn, Bb, Hbs, prop, BaseApp, MyRooter) {
+    function (Mn, Bb, Hbs, props, BaseApp, MyRooter) {
         'use strict';
 
         // config global variable in app
@@ -16,7 +16,7 @@ define(['marionette', 'backbone','hbs',
         window.app = app;
         app.Mn = Mn;
         app.Bb = Bb;
-        app.properties = prop;
+        app.props = props;
 
         //define routers
         var myRooter = new MyRooter();
@@ -30,11 +30,6 @@ define(['marionette', 'backbone','hbs',
                 trigger: true
             });
         });
-        //define app
-        require(['routers/MyRouter'],
-            function (TopLayoutView, MyRooter) {
-
-            });
 
         return app;
     });

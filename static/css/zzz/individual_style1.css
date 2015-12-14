@@ -4,7 +4,8 @@
     margin: 8px 0;
     padding: 3px 10px;
     text-align: center;
-    font-size: 40px;
+    font-family: Microsoft YaHei UI;
+    font-size: 50px;
     font-weight: bold;
     color: lightcyan;
     text-shadow: 0 2px 2px #000000;
@@ -24,15 +25,15 @@
     border: 1px solid #9acfea;
 }
 .style1 .category .categoryWrap.bgLegal{
-    background: url("../../images/category/legal.png") no-repeat;
+    background: url("../../images/category/style1/legal.png") no-repeat;
 }
 
 .style1 .category .categoryWrap.bgInsurance{
-    background: url("../../images/category/insurance.png")  no-repeat;
+    background: url("../../images/category/style1/insurance.png")  no-repeat;
 }
 
 .style1 .category .categoryWrap.bgOthers{
-    background: url("../../images/category/other.png")  no-repeat;
+    background: url("../../images/category/style1/other.png")  no-repeat;
 }
 
 .style1 .category_left .title{
@@ -62,4 +63,19 @@
     transition: all 0.3s ease-in;
     right: 0;
     opacity: 1;
+}
+
+/* category hover and active */
+.style1 .categoryWrap:active,
+.style1 .categoryWrap:hover {
+    -webkit-transform: scale(1.01,1.01);
+    -moz-transform: scale(1.01,1.01);
+    -ms-transform: scale(1.01,1.01);
+    -o-transform: scale(1.01,1.01);
+    transform: scale(1.01,1.01);
+    border: 1px solid #29DFFF !important;
+    box-shadow: 0 0 20px #29DFFF !important;
+    text-shadow:-3px 5px 5px #000000, -2px -2px 1px  #E8E9F0;
+    font-size: 55px;
+    color: #ffffff;
 }

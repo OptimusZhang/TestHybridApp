@@ -1,12 +1,12 @@
 /**
  * Created by jianwu.zhang on 2015/12/11.
  */
-define(['../../base/BaseItemView','hbs!../../templates/common/CommonHeaderItemViewTmpl'],
+define(['base/BaseItemView','hbs!templates/common/CommonHeaderIVTmpl'],
     function (BaseItemView, CommonHeaderItemViewTmpl) {
         'use strict';
         return BaseItemView.extend({
             initialize : function () {
-                console.log("CommonHeaderItemView.js:initialize()");
+                console.log("CommonHeaderIV.js:initialize()");
             },
             template: CommonHeaderItemViewTmpl
         });
